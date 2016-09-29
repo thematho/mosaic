@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mosaic.css">
+    <script type="text/javascript" src="js/mosaic.js"></script>
+    <title>Mosaic</title>
+  </head>
+  <body>
+    <h1 class="main-header">Mosaic Image Processing</h1>
+    <div class="content">
+      <div class="img-selection">
+        <h2 class="img-section__title">Original Image</h2>
+        <input id="img-section__input" type="file">
+        <div id="drop-container" class="drop-container">
+          <div id="drop-message" class="drop-container__message"> Drag & Drop File Here</div>
+          <img id="initial-img" class="img-selection__img hidden" src="" alt="">
+        </div>
+      </div>
+      <div class="result-container">
+        <h2 class="result-container__title">Processed Image</h2>
+        <div class="result-container__composited-img-wrapper"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/initInputs.js"></script>
+    <script type="text/javascript" src="js/client.js"></script>
+  </body>
+</html>
